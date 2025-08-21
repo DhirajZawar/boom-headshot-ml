@@ -1,0 +1,23 @@
+# File: config/defaults.yaml
+# Purpose:
+# - Central configuration for thresholds, readiness criteria, and stress scenarios.
+# - Values here can be tuned without changing code. Keep brand-only assumptions by default.
+# Usage:
+# - Load this file wherever thresholds or readiness logic are needed (gates, features, stress tests).
+# Notes:
+# - Start minimal on Day 1; expand as features/models are implemented.
+
+thresholds:
+  mos_cpc_ratio: 1.15   # Margin of Safety threshold for PPC
+  unit_margin_min: 8.0  # Minimum $ unit margin pre-ads
+
+readiness:
+  min_images: 7
+  require_video: true
+  keyword_coverage_min: 0.9
+
+risk:
+  stress:
+    cpc_up: 1.25
+    cvr_down: 0.8
+    freight_up: 1.2

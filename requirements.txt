@@ -1,0 +1,26 @@
+# Core data stack (pinned for Windows stability)
+numpy==2.0.2
+pandas==2.2.2
+pyarrow==17.0.0
+polars==1.32.3
+duckdb==1.3.2
+
+# Modeling stack (from client brief)
+scikit-learn==1.7.1
+lightgbm==4.6.0
+xgboost==3.0.4
+shap==0.48.0
+statsmodels==0.14.5
+
+# Configs & validation
+pydantic==2.11.7
+ruamel.yaml==0.18.14
+python-dotenv==1.0.1
+
+# Dashboard (Day 9)
+streamlit==1.48.1
+
+# Utilities
+requests==2.32.4
+tqdm==4.67.1
+jinja2==3.1.6
